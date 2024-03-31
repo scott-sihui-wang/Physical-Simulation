@@ -10,4 +10,4 @@ Open `Assets > Scenes > Assignment3.unity` with `Unity3D`. Press the `play` butt
 
 Below is the .
 
-![]()
+![](/Demo/766A3.gif)
