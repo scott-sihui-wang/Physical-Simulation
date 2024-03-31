@@ -2,6 +2,8 @@
 
 ## Introduction
 
+In this assignment, I implemented a rigid body simulator using forward dynamics. Specifically, I implemented __collision detection__, 
+
 **Topics:** _Physical Simulation_, _Rigid Body Simulation_, _Forward Dynamics_
 
 **Skills:** _Unity3D_, _C#_
@@ -12,6 +14,6 @@ Open `Assets > Scenes > Assignment3.unity` with `Unity3D`. Press the `play` butt
 
 ## Demo
 
-As is shown below, the white dice's behavior (with `our physical simulation`) is very similar to the yellow dice (with `Unity3D's built-in physical simluation`).
+As is shown below, the white dice's behavior (with `our physical simulation`) is very similar to the yellow dice (with `Unity3D's built-in physical engine`).
 
 ![](/Demo/766A3.gif)
