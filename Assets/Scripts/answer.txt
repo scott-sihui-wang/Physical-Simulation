@@ -1,0 +1,42 @@
+Name: Sihui Wang, Student ID: 301474102 (swa279)
+
+The original parameter values:
+Initial Position: X: -1, Y: 5, Z: 0
+Initial Rotation: X: 330, Y: 0, Z: 50
+Initial Velocity: X: 0, Y: 0, Z: 0
+Dt: 0.02
+Mass: 1
+Ks: 100
+Kd: 1
+Mu: 0.5
+
+The best parameter values:
+Mass: 1
+Ks: 300
+Kd: 9
+Mu: 0.9
+
+Each parameter's effects on simulated motions:
+Mass:
+If the Mass parameter is extremely low, then the dice will jump extremely high with very high speed and rotate a lot after the first bounce. The dice might jump higher and higher, go further and further, and never be able to stop.
+If the Mass parameter is low, the dice tends to rotate much after the bounces. The dice won't jump high, but the dice tends to be affected by small perturbations and makes a lot of bounces or jitters a lot.
+If the Mass parameter is higher, the dice tends to make fewer rotations. There will be fewer jitters.
+If the Mass parameter is very high, some part of the dice might sink under the ground for the first bounce during simulation. If the Mass parameter is extremely high, in simulation the dice can dive deep underground (which is not realistic in real world) and bounce back.
+
+Ks:
+If the Ks parameter is extremely low, then the dice might sink under the ground.
+The lower the Ks parameter is, the more part of the dice will sink under the ground for the first bounce. For later bounces, a small part of the dice might be under the ground, if the Ks parameter is low.
+If the Ks parameter is low, then the dice won't jump high after the bounce, and the number of bounces will be small. The dice won't rotate much is the Ks parameter is low.
+If the mass parameter is high, then the dice will jump high after the bounce, and there will be multiple bounces. If the Ks parameter is high, the dice tends to rotate a lot. The dice might keep rolling and reach somewhere far away if the Ks parameter is high.
+If the Ks parameter is extremely high, then the dice might jump higher and higher for each bounce. The dice might jump higher and higher, go further and further, and never be able to stop.
+
+Kd:
+If the Kd parameter is very low, the dice tends to make more bounces. After the bounces, the dice can reach a larger height. The dice also tends to rotate more, and make more movements along x and z directions (y direction is the direction of gravity).
+For a low-to-moderate Kd parameter, the dice tends to make few bounces. After the bounces, the dice won't reach a large height. The dice won't rotate much, or make much movements along x and z directions. 
+For a moderate Kd parameter, the dice will stop movements almost immediately after the first touching to the ground.
+If the Kd parameter is high, it means that even a "soft" touch to the ground with low speed can yield a strong reaction force. In such cases, it's difficult for the dice to stop bouncing. The dice will make more bounces, jitter and rotate more.
+If the Kd parameter is extremely high, then the dice might jump higher and higher for each bounce. The dice might jump higher and higher, go further and further, and never be able to stop.
+
+Mu:
+If the dice has a slight tendency to lean or rotate, a larger parameter Mu might be able to pull it back so that the dice recovers its former status. A smaller parameter Mu, however, won't be able to prevent the leaning or rotation, which means that the dice won't be restored to its former status.
+The effects of the parameter Mu depend on a number of factors (It is Mu*fn which affects the motion of the dice, so, parameter Mu's effects also depend on Ks and Kd). If the Mu parameter is high, sometimes Mu*fn can be too strong. In such cases, the frictional force won't stop the rotation, instead it triggers the rotation in the opposite direction.
