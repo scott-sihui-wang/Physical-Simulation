@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this assignment, I implemented a rigid body simulator using forward dynamics. Specifically, I implemented __collision detection__, 
+In this assignment, I implemented a rigid body simulator using forward dynamics. Specifically, I implemented _collision detection_, and I _compute the forces and torques_ and _integrate physical variables through time_ to complete a rigid body simulation system that can mimic Unity3D's build-in system as much as possible.
 
 **Topics:** _Physical Simulation_, _Rigid Body Simulation_, _Forward Dynamics_
 
